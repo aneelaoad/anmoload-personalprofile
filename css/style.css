@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&family=Rock+3D&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+/* -------------------------- */
+:root{
+    --primary: #B29B9C;
+    --dark: #6F1E51;
+}
+section{
+    margin: 4rem auto;
+}
+h2{
+    font-weight: 150;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* -------------------------styles--------------- */
+
+.home_bg{
+    background: var(--primary);
+    height: 100vh;
+    position: relative;
+    /* padding: 0 4rem 8rem 4rem; */
+    width: 100%;
+    overflow:hidden;
+    z-index: -4;
+}
+.home_bg .line{
+    position:absolute;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(12, 10, 110, 0.2);
+    transform: rotate(45deg);
+}
+.line1{
+    top: 0%;
+    /* left: 10%; */
+}
+.line2{
+    top: 15%;
+    /* left: 5%; */
+
+}
+.line3{
+    top: 30%;
+    /* left: 5%; */
+}
+.line4{
+    top: 45%;
+}
+.line5{
+    top: 60%;
+    /* left: 5%; */
+}
+.line6{
+    top: 75%;
+    /* left: 5%; */
+
+}
+
+.line7{
+    top: 90%;
+}
+
+.line8{
+    top: 110%;
+}
+
+.line9{
+    top: 125%;
+}
+.line10{
+    top:135%;
+    /* left: -5% !important; */
+
+}
+
+.logo h1{
+    font-family: 'Moo Lah Lah', cursive;
+    font-weight: 100 !important;
+    font-size: 6rem;
+    color: var(--primary);
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+    text-shadow: 1px 3px 2px rgb(158, 16, 139);
+    /* display: none; */
+    
+}
+.logo img{
+    width: 7rem;
+}
+.home_bg::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--primary);
+    left: 50%;
+    /* transform: translateX(-50%); */
+    z-index: -3;
+    border-left: 2px dotted rgba(12, 10, 110, 0.2);
+}
+
+
+/* --------Navbar starts-------- */
+header{
+    background: white;
+
+}
+header nav li a{
+    color: var(--dark) !important;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+header nav form input{
+    background: none !important;
+    border: none !important;
+    font-size: 1.5rem !important;
+    outline:  none !important;
+    
+}
+header nav form input::placeholder{
+    color: white !important;
+
+}
+h2{
+    color: #6F1E51;
+}
+/* --------Navbar Ends-------- */
+.home{
+    /* background: yellow; */
+    margin: 6rem auto !important;
+}
+.home img{
+    width: 30rem;
+    /* margin-top: 10rem; */
+}
+
+.middle img{
+    width: 32rem;
+}
+.navbar-nav{
+    /* background: yellow; */
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------HANGING DESIGNS------------------------- */
+.hangingPattern {
+    padding: 8rem;
+}
+.hangingPattern .bar{
+    width: 100%;
+    height: 1rem;
+    /* border: .5px solid var( --primary); */
+    background: #dddddd;
+}
+.ring{
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: rgb(41, 41, 39);
+    margin-top: 10rem;
+    /* margin-left: 1px; */
+}
+.ring h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+.ring::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: .2rem;
+    border: 1px solid var(--primary);
+    top: .2rem;
+}
+.ring::before{
+    position: absolute;
+    content: '';
+    height: 50%;
+    width: .3rem;
+    background: var(--primary);
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ring1{
+    background: rgba(200, 100, 50, .2);
+
+}
+.ring2{
+    background: rgba(51, 204, 153, 0.2);
+
+}
+.ring3{
+    background: rgba(201, 54, 86, 0.2);
+
+}
+.rings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* --------------------------------------------------------------------------- */
+.navigation{
+    /* margin: 4rem auto; */
+}
+.navigation .row, 
+.navigation .col-12{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.navigation .col-12{
+    /* background: yellow; */
+    height: 100%;
+    width: 100%;
+}
+.navigation .card{
+    height: 20rem;
+    width: 20rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 !important;
+    padding: 4rem !important;
+    /* box-shadow: rgba(221, 186, 29, 0.25) 0px 1px 1px, rgba(240, 219, 30, 0.13) 0px 0px 1px 1px; */
+}
+.navigation h2{
+    color: white !important;
+
+}
+.navigation .card1{
+    background: #D6A2E8;
+}
+.navigation .card2{    
+    background: #6D214F;
+    background: #c56cf0;
+}
+.navigation .card3{
+    background: #82589F;
+}
+.navigation .card4{
+    background: #cd84f1;
+}
