@@ -8,15 +8,15 @@
     <title>Moli</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="icon" href="assets/veena1.png" type="image/icon type">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-        <!-- ----navbar starts--- -->
-        <nav class="navbar navbar-expand-lg">
+         <!-- ----navbar starts--- -->
+         <nav class="navbar navbar-expand-lg" data-aos="fade-in">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="assets/veena1.png" alt="logo"></a>
+              <a class="navbar-brand" href="#">MOLI<img src="assets/veena1.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -26,10 +26,11 @@
                     <a class="nav-link active" aria-current="page" href="#">home</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="">Skills</a>
+                  </li>                                
+                  <li class="nav-item">
                     <a class="nav-link" href="work.html">My Work</a>
-                  </li>
-                                   
-                 
+                  </li> 
                 </ul>
                 
               </div>
@@ -37,10 +38,17 @@
           </nav>
         <!-- ----navbar ends--- -->
     <div class="home_bg">
-     
-        <section class="home">
-            <img src="assets/sakura.png" alt="flower" class="img-fluid">
-            <div class="about">
+        <img src="assets/sakura.png" alt="flower" class="img-fluid sakura" data-aos="fade-in">
+    
+        <div class="home">
+           
+            <div class="about w-75" data-aos="fade-in">
+                <!-- <div class="social-media">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div> -->
                 <h1>GREETINGS!</h1>
 
                 <p class="">
@@ -57,12 +65,11 @@
 
                 </p>
             </div>
-        </section>
+
+        </div>
     </div>
 
-    
-
-
+  
 
 
 
@@ -75,7 +82,7 @@
 
 
     
-    <section class="hangingPattern">
+    <section class="hangingPattern" data-aos="zoom-in-down">
         <div class="container">
             <div class="bar_container ">
                 <h2 class="text-center sub-heading">Favourite Quotes</h2>
@@ -116,7 +123,7 @@
         </div>
     </section>
 
-    <div class="favourite">
+    <div class="favourite" data-aos="zoom-in-down">
         <div class="container">
                 <div class="favourite-festivals row ">
                     <h2 class="sub-heading">Favourite Festivals</h2>
@@ -154,7 +161,7 @@
     
     <!-- -----------gallery starts---------------------- -->
 
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="gallery" data-aos="zoom-in-down">
         <div class="container text-center">
             <h2 class="sub-heading">Gallery</h2>
             <div class="row">
@@ -202,10 +209,50 @@
     </section>
     <!-- -----------gallery ends---------------------- -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="pink-flowers">
+        <img src="assets/pink.png" alt="">
+        <img src="assets/green1.png" alt="">
+        <img src="assets/pink1.png" alt="">
+        <img src="assets/green2.png" alt="">
+        <img src="assets/pink2.png" alt="">
+        <img src="assets/green3.png" alt="">
+        <span>This copyrights to Moli</span>
+        <img src="assets/green6.png" alt="">
+        <img src="assets/pink3.png" alt="">
+        <img src="assets/pink4.png" alt="">
+        <img src="assets/green4.png" alt="">
+        <img src="assets/pink5.png" alt="">
+        <img src="assets/green5.png" alt="">
+    </div>
+</footer>
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
    
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/819feb63a7.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>

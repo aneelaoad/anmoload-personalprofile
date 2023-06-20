@@ -26,42 +26,87 @@ section{
     width: 3rem;
     /* transform: rotate(-45deg); */
 }
+nav{
+    background: white !important;
+}
+nav li a{
+    text-transform: uppercase;
+    color: var(--dark);
+    font-weight: 550 !important;
+}
 .home_bg{
-    /* background: var(--dark);
-    background: #bf85d4; */
+    /* background: var(--dark); */
+    /* background: #535c68; */
     /* background-color: #12CBC4; */
-  
+  /* background: #f7e6d7; */
     position: relative;
     width: 100%;
+    /* height: 100vh; */
     overflow:hidden;
     color: #846549;
     color: var(--dark);
+    background-color: #f7deec;
 
 }
+.home_bg .sakura{
+    position: absolute;
+    z-index: 4;
+    right:-20px;
+    top: 10%;
+}
+.navbar-nav{
+    background-color: #f7deec;
+    padding: .4rem 2rem;
+}
+.home{
+    /* background: rgb(255, 255, 253); */
+    /* margin: 3rem auto !important; */
+    /* display: flex; */
+    height: 100%;
+    /* background-color: #f7deec; */
+    /* width: 80%; */
+    padding: 3rem;
+}
+.home img{
+    width: 30rem;
+    /* margin-top: 10rem; */
+}
+
+
 .about{
     position: relative;
+    background-color: #f7deec;
+    border-left: 2px solid #F7DEEC;
+    padding: 5rem 3.4rem;
+    height: 100%;
+    /* width: 50%; */
 }
 .about p{
     line-break: loose;
 }
 .about::before{
-    position: absolute;
-    left: -22px;
+    /* position: absolute; */
+    top: 0;
+    left: -25px;
     height: 100%;
-    width: 2px;
-    background-color: #998675;
+    width: 23px;
+    background-color: #F7DEEC;
     content: '';
 }
-/* .home_bg::before{
-    content: '';
+.about .social-media{
+    /* background: yellow; */
     position: absolute;
-    width: 50%;
-    height: 100%;
-    background: #FDA7DF;
-    left: 50%;
-    z-index: -3;
-    border-left: 2px dotted rgba(12, 10, 110, 0.2);
-} */
+    display: flex;
+    flex-direction: column;
+
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.about .social-media i{
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
 
 
 .cool{
@@ -85,50 +130,9 @@ header{
     background: white;
 
 }
-header nav li a{
-    color: var(--dark) !important;
-    margin-left: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-header nav form input{
-    background: none !important;
-    border: none !important;
-    font-size: 1.5rem !important;
-    outline:  none !important;
-    
-}
-header nav form input::placeholder{
-    color: white !important;
 
-}
-h2{
-    color: #6F1E51;
-}
 /* --------Navbar Ends-------- */
-.home{
-    /* background: yellow; */
-    margin: 3rem auto !important;
-    display: flex;
-}
-.home img{
-    width: 30rem;
-    /* margin-top: 10rem; */
-}
 
-.middle img{
-    width: 32rem;
-}
-.navbar-nav{
-    /* background: yellow; */
-    width: 50%;
-}
-nav{
-    display: flex;
-    justify-content: center;
-}
 
 /* -------------------------HANGING DESIGNS------------------------- */
 .hangingPattern {
@@ -392,3 +396,24 @@ margin: 2rem auto;
 .hide{
     display: none;
 }
+
+
+
+footer{
+    background: #f6fcfc;
+    padding: 1rem;
+}
+
+footer .pink-flowers{
+display: flex;    
+justify-content: space-around;
+align-items: center;
+text-align: center;
+}
+footer span{
+color: var(--primary);
+font-size: 1.2rem;
+}
+.pink-flowers img{
+  width: 2.5rem;
+    }
