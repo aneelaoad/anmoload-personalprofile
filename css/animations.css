@@ -1,0 +1,71 @@
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+    align-self: flex-end;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+@keyframes bounce-2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    80% { transform: translateY(-30px); }
+    100% { transform: translateY(-20px); }
+}
+
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: ease;
+    /* align-self: flex-end; */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    80% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes rotate {
+    0%   { transform: rotate(0deg); }
+    /* 10%  { transform: rotate(20deg); }
+    20% { transform: rotate(30deg); }
+    30% { transform: rotate(40deg); }
+    40% { transform: rotate(50deg); }
+    50% { transform: rotate(60deg); }
+    60% { transform: rotate(70deg); }
+    70% { transform: rotate(80deg); }
+    80% { transform: rotate(90deg); }
+    90% { transform: rotate(100deg); } */
+    100% { transform: rotate(360deg); }
+   
+}
+
+.holi{
+    animation: rotate 15s linear 0s infinite normal ;
+  
+}
+
+
+.zoom-in-out-box {
+    animation: zoom-in-zoom-out 4s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

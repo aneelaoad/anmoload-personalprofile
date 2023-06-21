@@ -1,0 +1,36 @@
+@media only screen and (max-width: 2000px) and (min-width: 1000px) {}
+
+@media only screen and (max-width: 1000px) and (min-width: 200px) {
+    .home_bg .sakura {
+        display: none;
+    }
+
+    .home_bg .home .about {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 200px) {
+    .home_bg .home .about {  width: 100%;   padding: 1rem;  }
+
+
+    .hangingPattern .ring { padding: 1rem; height: auto; }
+    .hangingPattern .ring h4{
+        font-size: 1.2rem;
+    }
+    .hangingPattern .ring{border-radius: 0; width: 100%; margin-top: 1rem;}
+    .hangingPattern .ring::after{border: 1px solid transparent; }
+    .hangingPattern .ring::before{display: none;}
+
+
+
+    
+    footer .pink-flowers img { width: 1rem;font-size: 1rem;}
+    footer .pink-flowers span { font-size: 1rem; }
+    footer .pink-flowers img:first-child{ display: none;}
+    footer .pink-flowers img:last-child{ display: none;}
+    footer .pink-flowers img:nth-child(2){ display: none;}
+    footer .pink-flowers img:nth-child(6){ display: none;}
+    footer .pink-flowers img:nth-child(8){ display: none;}
+    footer .pink-flowers img:nth-child(9){ display: none;}
+}

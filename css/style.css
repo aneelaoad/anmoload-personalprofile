@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Petit+Formal+Script&display=swap');
+@import '/css/media-queries.css';
+@import '/css/animations.css';
 /* -------------------------- */
 :root{
     --primary: #B29B9C;
     --dark: #6F1E51;
-    --golden:#FFC312;
+    --golden:#f6e58d;
     --water:#38ada9;
+    --light: #F7DEEC;
 }
 body{
     padding: 0;
@@ -45,17 +48,19 @@ nav li a{
     overflow:hidden;
     color: #846549;
     color: var(--dark);
-    background-color: #f7deec;
+    background-color: var(--light);
 
 }
+
 .home_bg .sakura{
     position: absolute;
-    z-index: 4;
+    /* z-index: 1; */
     right:-20px;
     top: 10%;
+   
 }
 .navbar-nav{
-    background-color: #f7deec;
+    background-color: var(--light);
     padding: .4rem 2rem;
 }
 .home{
@@ -72,14 +77,14 @@ nav li a{
     /* margin-top: 10rem; */
 }
 
-
+ 
 .about{
     position: relative;
-    background-color: #f7deec;
-    border-left: 2px solid #F7DEEC;
+    /* background-color: #f7deec; */
+    border-left: 2px solid var(--light);
     padding: 5rem 3.4rem;
     height: 100%;
-    /* width: 50%; */
+    width: 75%;
 }
 .about p{
     line-break: loose;
@@ -90,7 +95,7 @@ nav li a{
     left: -25px;
     height: 100%;
     width: 23px;
-    background-color: #F7DEEC;
+    background-color: var(--light);
     content: '';
 }
 .about .social-media{
@@ -137,6 +142,7 @@ header{
 /* -------------------------HANGING DESIGNS------------------------- */
 .hangingPattern {
     padding: 2rem;
+    text-align: center;
 }
 .hangingPattern .bar{
     width: 100%;
@@ -310,7 +316,7 @@ header{
 
 .favourite .favourite-festivals{
 margin: 2rem auto;
-/* text-align: center; */
+padding: 4rem 1rem;
 }
 .favourite h3{
     color: var(--water);
@@ -319,19 +325,41 @@ margin: 2rem auto;
     text-align: center;
     margin: 2rem auto;
     display: flex;
-    flex-direction: column-reverse;
-    box-shadow: rgba(40, 189, 226, 0.15) 0px 3px 3px 0px;
-    border: 1px solid #f8f6f6;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-shadow: #f58dff 0px 1px 1px ;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border: 1px solid transparent;
+    /* background: #f7deec; */
+    color: rgb(7, 7, 7);
+    border-top: 2px solid  var(--primary);
 }
-.favourite-festivals .card:hover{
+/* .favourite-festivals .card:hover{
     border:2px solid rgba(40, 189, 226, 0.15)
+} */
+.favourite-festivals .card img{
+    width: 10rem;
+    height: 10rem;
+    /* transform: rotate(30deg); */
+   
 }
+
+
+
+
 .favourite-festivals .card h4{
     font-weight: 600;
     text-shadow: 0px 1px 1px rgba(15, 19, 24, 0.4);
 
     text-transform: uppercase;
-    margin: 2rem auto;
+    margin: 1rem auto;
+}
+.favourite-festivals .card .card-body{
+    background: var(--primary);
+    margin-top: 1rem;
 }
 .favourite-festivals .card h4 .c1
 {
